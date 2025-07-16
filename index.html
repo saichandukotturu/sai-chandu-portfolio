@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Chandu Kotturu | DevOps & Cloud Engineer</title>
-  <link href="styles.css" rel="stylesheet" />
-</head>
-<body>
-  <header>
-    <h1>Sai Chandu Kotturu</h1>
-    <p>DevOps & Cloud Engineer</p>
-    <div class="cta">
-      <a href="resume.pdf" download>Download Resume</a>
-      <a href="https://github.com/your-github" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Chandu Kotturu | DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-800 text-white py-10 text-center">
+      <h1 class="text-4xl font-bold">Sai Chandu Kotturu</h1>
+      <p class="text-xl mt-2">DevOps & Cloud Engineer</p>
+      <div class="mt-4 space-x-4">
+        <a href="resume.pdf" class="bg-white text-blue-800 px-4 py-2 rounded hover:bg-blue-100" download>Download Resume</a>
+        <a href="https://github.com/saichandukotturu" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded hover:bg-blue-100">GitHub</a>
+        <a href="https://www.linkedin.com/in/sai-chandu-kotturu-ab4a30203/" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded hover:bg-blue-100">LinkedIn</a>
+      </div>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Detail-oriented DevOps Engineer with X years of experience in AWS, Azure, CI/CD automation, containerization, monitoring, and infrastructure as code.</p>
-  </section>
+    <section class="max-w-4xl mx-auto p-6">
+      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+      <p class="mb-6">Experienced DevOps Engineer with 5+ years of experience in cloud infrastructure, CI/CD automation, containerization, monitoring, and infrastructure as code using AWS, Azure, Terraform, Jenkins, and more.</p>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><b>Cloud:</b> AWS, Azure</li>
-      <li><b>IaC & Config:</b> Terraform, Ansible</li>
-      <li><b>CI/CD:</b> Jenkins, GitHub Actions</li>
-      <li><b>Containers:</b> Docker, Kubernetes</li>
-      <li><b>Scripting:</b> Python, Bash</li>
-      <li><b>Monitoring:</b> ELK, Prometheus, Grafana</li>
-    </ul>
-  </section>
+      <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div><strong>Cloud:</strong> AWS, Azure</div>
+        <div><strong>IaC:</strong> Terraform, Ansible</div>
+        <div><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab</div>
+        <div><strong>Containers:</strong> Docker, Kubernetes (EKS, AKS)</div>
+        <div><strong>Monitoring:</strong> Prometheus, Grafana, ELK</div>
+        <div><strong>Languages:</strong> Python, Bash</div>
+      </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="job">
-      <h3>Cloud DevOps Engineer • Company Name • Jan 2023–Present</h3>
-      <ul>
-        <li>Automated AWS cost‑optimization workflows and cut monthly spend by 25%.</li>
-        <li>Built CI/CD pipelines with Jenkins and GitHub Actions—reduced release time by 60%.</li>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Experience</h2>
+      <div class="mb-6">
+        <h3 class="font-bold">HCL Technologies — Senior Software Engineer (Dec 2022 – Aug 2023)</h3>
+        <ul class="list-disc ml-6">
+          <li>Deployed AWS infrastructure using Terraform for scalable environments</li>
+          <li>Improved CI/CD pipelines and reduced release errors by 30%</li>
+          <li>Implemented centralized monitoring with ELK and Prometheus</li>
+          <li>Automated infrastructure provisioning and container deployments using Ansible and Kubernetes</li>
+        </ul>
+      </div>
+      <div class="mb-6">
+        <h3 class="font-bold">HCL Technologies — Software Engineer (Jul 2019 – Nov 2022)</h3>
+        <ul class="list-disc ml-6">
+          <li>Led CI/CD pipeline automation using Jenkins, GitLab, Azure DevOps</li>
+          <li>Managed cloud infrastructure and application rollouts on Azure</li>
+          <li>Reduced manual effort by 50% using Python and Bash scripting</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Projects</h2>
+      <div class="mb-6">
+        <h3 class="font-semibold">AWS Cost Optimization Automation</h3>
+        <p>Built Python scripts and Terraform modules to monitor and right-size underutilized AWS resources, reducing cost by 25%.</p>
+      </div>
+      <div class="mb-6">
+        <h3 class="font-semibold">Zero-Downtime Kubernetes Deployment</h3>
+        <p>Implemented blue-green and canary deployment strategies using Kubernetes and Helm for high-availability applications.</p>
+      </div>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Education</h2>
+      <ul class="list-disc ml-6">
+        <li><strong>Master of Science in Computer Science</strong> – Southeast Missouri State University (2023 – 2025)</li>
+        <li><strong>Bachelor of Engineering in ECE</strong> – QIS College of Engineering and Technology (2015 – 2019)</li>
       </ul>
-    </div>
-    <!-- Repeat for other roles -->
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Blue‑Green Kubernetes Deployments</h3>
-      <p>Designed and implemented blue‑green deployment strategy on Kubernetes clusters using Helm and Argo CD for zero downtime releases.</p>
-    </div>
-    <!-- Add more projects -->
-  </section>
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Certifications</h2>
+      <ul class="list-disc ml-6">
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AWS Certified SysOps Administrator</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>© 2025 Sai Chandu. <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-  </footer>
-</body>
+    <footer class="bg-gray-200 text-center py-4">
+      <p>© 2025 Sai Chandu Kotturu · <a href="mailto:saichandu62@gmail.com" class="text-blue-600">saichandu62@gmail.com</a></p>
+    </footer>
+  </body>
 </html>
